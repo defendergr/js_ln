@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JavaScript Random Number</title>
+  <title>JavaScript Lucky Number</title>
   <style>
 #exada{
 	  font-size:25px;
@@ -19,13 +19,20 @@
 <img src="images\random_nums.jpg" width="300">
 <br>
 <br>
-<button onclick="klirosisi()">Τυχερή εξάδα</button>
+<button onclick="klirosi()">Τυχερή εξάδα</button>
 <br>
 <br>
 <div id="exada"></div>
 <script>	
 function klirosi(){
-	
+	var exada=document.querySelector("#exada");
+	var n;
+	var p=new Array();
+	for (var i=1;i<=6;i++){
+		do{
+		n=Math.floor(Math.random()+49)+1;
+		} while
+	}
 }
 </script>
 </body>
