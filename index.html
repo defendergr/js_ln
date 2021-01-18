@@ -7,8 +7,8 @@
   <style>
 #exada{
 	  font-size:25px;
-	  width:150px;
-	  height:50px;
+	  width:180px;
+	  height:30px;
 	  padding:5px;
 	  border:1px solid black;
 }
@@ -30,10 +30,13 @@ function klirosi(){
 	var p=new Array();
 	for (var i=1;i<=6;i++){
 		do{
-		n=Math.floor(Math.random()+49)+1;
-		} while
+		n=Math.floor(Math.random()*49)+1;
+		} while (p.indexOf(n)!=-1);
+		p.push(n);
 	}
+	exada.innerHTML=p;
 }
+
 </script>
 </body>
 </html>
